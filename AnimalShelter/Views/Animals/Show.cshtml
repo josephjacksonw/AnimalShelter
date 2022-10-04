@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My To-Do List!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>To Do List Animal Details: </h1>
+
+    <h2>@Model["animal"].Description</h2>
+    <h3>Category: @Model["category"].Name</h3>
+
+    <a href='/categories/@Model["category"].Id/animals/new'>Add another animal</a>
+    <a href='/categories'>View all categories</a>
+
+  </body>
+</html>
