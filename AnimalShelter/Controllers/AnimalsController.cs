@@ -31,6 +31,7 @@ namespace AnimalShelter.Controllers
         _db.SaveChanges();
         return RedirectToAction("Index");
     }
+
     public ActionResult Details(int id)
     {
         Animal thisAnimal = _db.Animals.FirstOrDefault(animal => animal.AnimalId == id);
